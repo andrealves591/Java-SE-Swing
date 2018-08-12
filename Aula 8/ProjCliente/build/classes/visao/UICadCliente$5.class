@@ -1,0 +1,17 @@
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\Aluno\\Desktop\\ExAppInternTarde\\app\\build\\intermediates\\res\\merged\\debug\\values-ky_values-ky.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Aluno\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\2e6bb997bb57ea67808d0a38aa2116f3\\res\\values-ky\\values-ky.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        

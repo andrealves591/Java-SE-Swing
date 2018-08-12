@@ -1,0 +1,25 @@
+create table seriado(
+    idseriado bigint auto_increment,
+    nome varchar(50),
+    temporada varchar(30),
+    primary key(idseriado)
+);
+
+insert into seriado(idseriado, nome, temporada)
+values(null,"The Game Of Thrones", "1ª"),
+(null,"The Game Of Thrones", "2ª"),
+(null,"The Game Of Thrones", "3ª"),
+(null,"The Game Of Thrones", "4ª"),
+(null,"The Big Bang Theory", "1ª"),
+(null,"The Big Bang Theory", "2ª"),
+(null,"Criminal Minds", "1ª"),
+(null,"Criminal Minds", "2ª");
+
+create table episodio(
+    idepisodio bigint auto_increment,
+    nome varchar(30) not null,
+    duracao double not null, 
+    idseriado bigint,
+    primary key(idepisodio),
+    foreign key(idseriado) references seriado(idseriado)
+);

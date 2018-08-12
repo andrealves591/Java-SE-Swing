@@ -1,0 +1,18 @@
+CREATE TABLE clientes(
+    idcliente bigint auto_increment,
+    nome varchar(200) not null,
+    sexo varchar(10) not null,
+    possuicartao varchar(4) not null,
+    qtdcartoes int,
+    qualcartao1 char(4),
+	qualcartao2 char(3),
+	qualcartao3 char(12),
+	qualcartao4 char(10),
+	qualcartao5 char(9),
+	qualcartao6 char(16),
+    qualconta1 char(4),
+	qualconta2 char(8),
+	qualconta3 char(8),
+	qualconta4 char(9),
+    primary key (idcliente)
+);

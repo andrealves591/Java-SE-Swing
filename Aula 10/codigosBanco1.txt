@@ -1,0 +1,37 @@
+﻿show databases;							MOSTRA OS BANCOS DE DADOS DISPONÍVEIS
+
+drop database amanha; 					EXCLUI O BANCO DE DADOS "amanha"
+
+drop database estoquemanha; 			EXCLUI O BANCO DE DADOS "estoquemanha"
+
+create database atarde; 				CRIA O BANCO DE DADOS "atarde"
+
+use atarde;								USA O BANCO DE DADOS "atarde"
+
+create table cliente(					CRIA A TABELA "cliente"
+	idcliente bigint auto_increment,	CRIA UMA COLUNA DO TIPO BIGINT COM AUTO_INCREMENT
+	nome varchar(100) not null,			CRIA UMA COLUNA DO TIPO VARCHAR QUE SUPORTA 100 CARACTERES E QUE NÃO ACEITA VALOR NULO
+	salario double not null,			CRIA UMA COLUNA DO TIPO DOUBLE QUE NÃO ACEITA VALOR NULO
+	idade int not null,					CRIA UMA COLUNA DO TIPO INTEIRO QUE NÃO ACEITA VALOR NULO
+	primary key(idcliente)				DEFINE A COLUNA "idcliente" COMO CHAVE PRIMÁRIA
+);
+
+describe cliente;						DESCREVE A TABELA "cliente"
+
+show tables;							MOSTRA TODAS AS TABELAS
+
+select * from cliente;					SELECIONA *(TODAS AS COLUNAS) DA TABELA "cliente"
+
+insert into cliente(idcliente, nome, salario, idade)		INSIRE NAS COLUNAS DA TABELA "cliente" 
+values (null, 'Zé', 1100, 51);								ESTES VALORES
+
+CREATE TABLE clientes(
+    idcliente bigint auto_increment,
+    nome varchar(200) not null,
+    sexo varchar(10) not null,
+    possuicartao varchar(4) not null,
+    qtdcartoes int,
+    qualcartao varchar(200),
+    qualconta varchar(200),
+    primary key (idcliente)
+);							 	
